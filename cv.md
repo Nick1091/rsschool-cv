@@ -18,6 +18,7 @@ My name is Nikolay, and I consider myself to be my goal in life. I have extensiv
 * CSS3
 * Javascript basics
 * VSCode
+* Git
 
 ## __Code example__
 ```JavaScript

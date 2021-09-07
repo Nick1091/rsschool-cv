@@ -9,6 +9,7 @@
 * __GitHub: @Nick10.91__
 * __Discord: nick1091#2690__
 * __Telegram: nick nick__
+* __[VK](https://vk.com/id34860744)__
 
 ## __About me__ 
 My name is Nikolay, and I consider myself to be my goal in life. I have extensive experience in various fields, but in programming I see the meaning of developing myself for further study of work and the acquisition of new skills.

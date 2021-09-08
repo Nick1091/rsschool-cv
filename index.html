@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickolay Kuckharchuk CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wraper">
+        <div class="header">
+            <div class="column">
+                <figure class="header_avatar">
+                    <img src="img/avatar.jpg" class="header_image" alt="header_avatar" >
+                </figure>
+            </div>
+            <div class="column_main">
+                <h1 class="header_title">Nikolay Kukharchuk</h1>
+                <h3 class="header_subtitle">Web developer</h3>
+            </div>
+        </div>
+        <div class="main">
+            <div class="column">
+                <section class="iformation_section contacts">
+                    <h2 class="contacts">Contacts</h2> 
+                    <ul class="contacts__list">
+                        <li class="contacts__items">
+                            <div class="contact__icon contact__icon__phone "></div>
+                            <div><a href="tel:+375336050820" class="contact__link">+375 (33) 605-08-20</a></div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__mail "></div>
+                            <div><a href="https://mail.ru/Nick1091" class="contact__link">Nick10.91@mail.ru</a></div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__mail"></div>
+                            <div><a href="https://github.com/Nick1091"  class="contact__link">github.com/Nick10.91</a></div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__telegram"></div>
+                            <div><a href="https://t.me/nick_nick1091" class="contact__link">t.me/nick_nick1091></a></div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__geo"></div>
+                            <div><p>Belarus, Brest</p></div>
+                        </li>
+                     </ul>
+                </section>
+                <section class="iformation_section skills">
+                    <h2 class="skills">My skills</h2>
+                    <ul class="skills__wrapper">
+                        <li class="skills__list">HTML5 </li>
+                        <li class="skills__list">CSS3</li>
+                        <li class="skills__list">JS basic</li>
+                        <li class="skills__list">VSCode</li>
+                        <li class="skills__list">Git</li>
+                    </ul>
+                </section>
+                <section class="iformation_section languages">
+                    <h2 class="languages">Foreign Languages</h2>
+                    <p>English - A2</p>
+                </section>
+            </div>
+            <div class="column_main">
+                <section class="iformation_section about">
+                    <h2 class="about_me">About me</h2>
+                    <p>Hi! I am a beginner web developer. Now I am studying to get a profession.
+                        I have experience in other areas not related to programming but I like what I am doing now. I want to develop because it gives me pleasure. I enjoy studying and learning new things create something and see the results of my work.</p>
+                </section>
+                <section class="iformation_section education">
+                    <h2 class="education__list">Education</h2>
+                    <ul>
+                        <li class="education__list__item"><a href="https://www.bstu.by">BSTU</a>, Faculty of Civil Engineering</li>
+                        <li class="education__list__item"><a href="https://learn.javascript.ru">.learn.javascript.ru</a></li>
+                        <li class="education__list__item">Youtube coursers</li>
+                    </ul>
+                </section>
+                <section class="iformation_section code_example">
+                    <h2 class="code__example">Code example</h2>
+                    <pre><code class="lang_JavaScript">
+                    <span>function newarr(n)</span>{
+                        <span class="hljs-keyword">let</span> arr = [<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">4</span>,<span class="hljs-number">9</span>,<span class="hljs-number">16</span>];
+                        <span class="hljs-keyword">let</span> arr1 = [];
+                        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+                            <span class="hljs-keyword">if</span>(i % <span class="hljs-number">2</span> != <span class="hljs-number">0</span>){
+                            arr1.push(arr[i] * arr[i]);};
+                        };
+                        <span class="hljs-built_in">console</span>.log(arr1);
+                    }
+                    </code></pre>
+                </section>
+                <section class="iformation_section hobies">
+                    <h2 class="hobies">Hobby</h2>
+                    <p class="hobies_list">My hobby is mobile phone repair,
+                        swimming, outdoor activities.
+                        I like pleasant communication with nice people.       
+                    </p>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer_year">2021</div>
+                <div class="footer_logo">
+                    <div class="footer__logo__git"><a href="https://github.com/Nick1091"></a></div>
+                    <div class="footer__logo__youtube"><a href="https://www.youtube.com/channel/UCxUfPIL1IXrNwLULk5i9XNw"></a></div>
+                    <div class="footer__logo__rsschool"><a href=https://rs.school/js></a></div>
+                </div>
+            </div>  
+        </footer>
+    </div>
+</body>
+</html>

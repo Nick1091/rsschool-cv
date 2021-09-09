@@ -23,16 +23,15 @@ My name is Nikolay, and I consider myself to be my goal in life. I have extensiv
 
 ## __Code example__
 ```JavaScript
-   function newarr(m)
-{
-    let arr = [0,1,4,9,16];
-    let arr1 = [];
-    for(let i = 0; i < arr.length; i++) {
-        if(i % 2 != 0){
-        arr1.push(arr[i] * arr[i]);};
-    };
-    console.log(arr1);
-}
+function newarr(n){
+let arr = [0,1,4,9,16];
+let arr1 = [];
+for(let i = 0; i < arr.length; i++) {
+    if(i % 2 != 0){
+    arr1.push(arr[i] * arr[i]);};
+};
+console.log(arr1);
+};
 ```
 ## __Education__
 * [BSTU](https://www.bstu.by), Faculty of Civil Engineering

@@ -1,0 +1,277 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-family: 'Urbanist', sans-serif;;
+}
+h2{
+    padding-bottom: 20px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#000096;
+    transition: all .3s linear;
+}
+a:hover{
+    text-decoration: underline;
+    color:#0000ff;
+}
+hr{
+    display: block;
+    overflow: visible;
+    max-width: 60%;
+    margin: 0px 0px 36px 0px;
+    padding: 0px;
+    height: 1px;
+    border: none;
+    background: #f0b426;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    margin: 0px auto;
+    min-height: 100%;
+    box-shadow: 0px 0px 15px hsl(0, 0%, 25%)
+}
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
+}
+.column {
+    width: 40%;
+    padding: 0px 60px;
+    background-color: #e8e8e8;
+}
+.header_avatar {
+    position: relative;
+    margin: 20px auto 40px;
+    display: flex;
+    justify-content: center;
+}
+.header_image {
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0px 0px 7px #000000;
+}
+.column_main {
+    width:  60%;
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#f3f3f3;    
+}
+
+.header_title {
+    font-size: 45px;
+}
+.header_subtitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.main {
+    display: flex;
+    flex: 1 1 auto;
+}
+.information_section {
+    margin-bottom: 40px;
+}
+.contacts {
+}
+.contacts__list {
+}
+.contacts__item {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.contact__icon {
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.contact__icon__phone {
+    background-image: url(../rsschool-cv/img/phone_yellow.svg);
+}
+.contact__link {
+}
+.contacts__item {
+}
+.contact__icon__mail {
+    background-image: url(../rsschool-cv/img/email_yellow.svg)
+}
+.contact__icon__git{
+    background-image: url(../rsschool-cv/img/github_yellow.svg)  
+}
+.contact__icon__telegram {
+    background-image: url(../rsschool-cv/img/telegram.svg)
+}
+.contact__icon__geo {
+    background-image: url(../rsschool-cv/img/geo_yellow.svg)
+}
+.skills {
+}
+.skills__wrapper {
+    position: relative;
+}
+.skills__list::before{
+    position: absolute;
+    content:'';
+    display: block;
+    background-color: #f0b426;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 6px;
+    left: 0px;
+}
+.skills__list {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.languages {
+}
+.about {
+}
+.about_me {
+}
+.education {
+}
+.education__list {
+    position: relative;
+}
+.education__list__item::before {
+    position: absolute;
+    content:'';
+    display: block;
+    background-color: #f0b426;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 6px;
+    left: 0px;
+}
+.education__list__item {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.code_example {
+}
+.code__example__code {
+    background-color:#ffffff
+}
+.hobbies {
+}
+.hobbies_list {
+}
+.footer {
+    background-color: #c4c4c4;
+    padding: 15px 15px;
+    font-size: 14px;
+}
+.footer__inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.footer__inner>div{
+    margin-right: 20px;
+}
+.footer_year {
+}
+.footer_logo__rsschool {
+    background-image: url(../rsschool-cv/img/rs_school_js.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 70px;
+    height: 26px;
+    margin: 0px 10px;
+    
+}
+.footer_logo__git {
+    background-image: url(../rsschool-cv/img/github_yellow.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+.footer_logo__youtube {
+    background-image: url(../rsschool-cv/img/youtube_yellow.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 40px;
+    height: 20px;
+    margin: 0px 10px; 
+ }
+@media(max-width: 1200px){
+    .wrapper {
+        max-width: 970px; }
+}
+@media(max-width: 992px){
+    .wrapper {
+        max-width: 690px; }
+    .column_main {
+        padding: 0px 20px;}
+    .column {
+        padding: 0px 20px;} 
+}
+@media(max-width: 720px){
+    .body{
+        font-size: 17px !important;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .wrapper {
+        max-width: none; }
+    .column_main {
+        width: 100%;
+        background-color:#e8e8e8; }
+    .column {
+        width: 100%;}               
+}
+@media(max-width: 520px){
+    .header{
+        flex-direction: column;}
+    .body{
+        font-size: 18px !important;}
+    } 
+@media(max-width: 420px){
+    .code__example__code {
+        display: none;}  
+}
+@media(min-width: 419px){
+    .code__example__code1{
+        display: none;
+    }
+}    

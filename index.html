@@ -9,10 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/highlight/styles/arta.min.css">
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script> -->
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header class="header">
+            <div class="navigation_wrapper">
+                <nav id="navigation" class="navigation">
+                    <ul class="navigation_lists">
+                        <li class="navigation_list"><a href="#contacts" class="link">Contacts</a></li>
+                        <li class="navigation_list"><a href="#My_skills" class="link">My skills</a></li>
+                        <li class="navigation_list"><a href="#Foreign_Languages" class="link">Foreign Languages</a></li>
+                        <li class="navigation_list"><a href="#About_me" class="link">About me</a></li>
+                        <li class="navigation_list"><a href="#Education" class="link">Education</a></li>
+                        <li class="navigation_list"><a href="#My_work" class="link">My work</a></li>
+                        <li class="navigation_list"><a href="#Hobbies" class="link">Hobbies</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <div class="burger_line line_first"></div>
+                    <div class="burger_line line_second"></div>
+                    <div class="burger_line line_third"></div>
+                    <div class="burger_line line_fourth"></div>
+                </div>
+            </div>
+            <div class="header_name">
                 <div class="column">
                     <figure class="header_avatar">
                     <img src="img/avatar.jpg" class="header_image" alt="header_avatar" >
@@ -22,96 +46,116 @@
                     <h1 class="header_title">Nikolay Kukharchuk</h1>
                     <h3 class="header_subtitle">Web developer</h3>
                 </div>
-        </div>
-        <div class="main">
-                <div class="column">
-                    <section class="information_section contacts">
-                        <h2 class="contacts">Contacts</h2> 
-                        <ul class="contacts__list">
-                            <li class="contacts__item">
-                                <div class="contact__icon contact__icon__phone "></div>
-                                <div><a href="tel:+375336210161" class="contact__link">+375 (33) 621-01-61</a></div>
-                            </li>
-                            <li class="contacts__item">
-                                <div class="contact__icon contact__icon__mail "></div>
-                                <div><a href="https://mail.ru/Nick1091" class="contact__link">Nick10.91@mail.ru</a></div>
-                            </li>
-                            <li class="contacts__item">
-                                <div class="contact__icon contact__icon__git"></div>
-                                <div><a href="https://github.com/Nick1091"  class="contact__link">github.com/Nick10.91</a></div>
-                            </li>
-                            <li class="contacts__item">
-                                <div class="contact__icon contact__icon__telegram"></div>
-                                <div><a href="https://t.me/nick_nick1091" class="contact__link">t.me/nick_nick1091</a></div>
-                            </li>
-                            <li class="contacts__item">
-                                <div class="contact__icon contact__icon__geo"></div>
-                                <div><p>Belarus, Brest</p></div>
-                            </li>
-                        </ul>
-                    </section>
-                    <hr>
-                    <section class="information_section skills">
-                        <h2 class="skills">My skills</h2>
-                        <ul class="skills__wrapper">
-                            <li class="skills__list">HTML5 </li>
-                            <li class="skills__list">CSS3</li>
-                            <li class="skills__list">JS basic</li>
-                            <li class="skills__list">VSCode</li>
-                            <li class="skills__list">Git</li>
-                        </ul>
-                    </section>
-                    <hr>
-                    <section class="information_section languages">
-                        <h2 class="languages">Foreign Languages</h2>
-                        <p>English - A2</p>
-                    </section>
-                </div>
-                <div class="column_main">
-                    <section class="information_section about">
-                        <h2 class="about_me">About me</h2>
-                        <p>Hi! I am a beginner web developer. Now I am studying to get a profession.
-                            I have experience in other areas not related to programming but I like what I am doing now. I want to develop because it gives me pleasure. I enjoy studying and learning new things create something and see the results of my work.
-                        </p>
-                    </section>
-                    <hr>
-                    <section class="information_section education">
-                        <h2 class="education__title">Education</h2>
-                        <ul class="education__list">
+            </div>
+        </header>
+        <main class="main">
+            <div class="column">
+                <section class="information_section contacts">
+                    <h2 id="contacts" class="contacts">Contacts</h2> 
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__phone "></div>
+                            <div><a href="tel:+375336210161" class="contact__link">+375 (33) 621-01-61</a></div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__mail "></div>
+                            <div><a href="https://mail.ru/Nick1091" class="contact__link">Nick10.91@mail.ru</a></div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__git"></div>
+                            <div><a href="https://github.com/Nick1091"  class="contact__link">github.com/Nick10.91</a></div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__telegram"></div>
+                            <div><a href="https://t.me/nick_nick1091" class="contact__link">t.me/nick_nick1091</a></div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contact__icon contact__icon__geo"></div>
+                            <div><p>Belarus, Brest</p></div>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="information_section skills">
+                    <h2 id="My_skills" class="skills">My skills</h2>
+                    <ul class="skills__wrapper">
+                        <li class="skills__list">HTML5 </li>
+                        <li class="skills__list">CSS3</li>
+                        <li class="skills__list">JS basic</li>
+                        <li class="skills__list">VSCode</li>
+                        <li class="skills__list">Git</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="information_section languages">
+                    <h2 id="Foreign_Languages" class="languages">Foreign Languages</h2>
+                    <p>English - A2</p>
+                </section>
+            </div>
+            <div class="column_main">
+                <article class="information_section about">
+                    <h2 id="About_me" class="about_me">About me</h2>
+                    <p>Hi! I am a beginner web developer. Now I am studying to get a profession.
+                        I have experience in other areas not related to programming but I like what I am doing now. I want to develop because it gives me pleasure. I enjoy studying and learning new things create something and see the results of my work.
+                    </p>
+                    <div class="videowrap">
+                        <div class="videoblock">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oUX5m2uW2Xo" title="YouTube video player" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <section class="information_section education">
+                    <h2 id="Education" class="education__title">Education</h2>
+                    <ul class="education__list">
                         <li class="education__list__item"><a href="https://www.bstu.by">BSTU</a>, Faculty of Civil Engineering</li>
                         <li class="education__list__item"><a href="https://learn.javascript.ru">learn.javascript.ru</a></li>
                         <li class="education__list__item">Youtube coursers</li>
                     </ul>
-                    </section>
-                    <hr>
-                    <section class="information_section code_example">
-                        <h2 class="code__example">Code example</h2>
-                        <pre class="code__example__code"><code><span>function newarr(n){<br>    let arr = [0,1,4,9,16];<br>    let arr1 = [];<br>    for(let i = 0; i &lt; arr.length; i++) {<br>        if(i % 2 != 0){<br>            arr1.push(arr[i] * arr[i]);};<br>        };<br>console.log(arr1);<br>};</span></code></pre>
-                        <pre class="code__example__code1"><code><span>function newarr(n){<br>let arr = [0,1,4,9,16];<br>let arr1 = [];<br>for(let i=0;i&lt;arr.length;i++){<br>  if(i % 2 != 0){<br>    arr1.push(arr[i] * arr[i]);};<br>    };<br>console.log(arr1);<br>};</span></code></pre>
-                    </section>
-                    <hr class="line">
-                    <section class="information_section hobbies">
-                        <h2 class="hobbies">Hobbies</h2>
-                        <p class="hobbies_list">My hobbies is mobile phone repair,
-                            swimming, outdoor activities.I like pleasant communication with nice people.       
-                        </p>
-                    </section>
-                </div>
-        </div>
+                </section>
+                <hr>
+                <section class="information_section code_example">                
+                    <h2 id="My_work" class="my_work">My work</h2>
+                    <a class="link_website" target="blank" href="https://nick1091.github.io/rsschool-cv/">CV page</a>
+                    <p>code example</p>
+                    <pre><code>
+                        function newarr(n){
+                            let arr = [0,1,4,9,16];
+                            let arr1 = [];
+                            for(let i = 0; i &lt; arr.length; i++) {
+                                if(i % 2 != 0){
+                                    arr1.push(arr[i] * arr[i]);};
+                                };
+                        console.log(arr1);
+                        };
+                    </code></pre>
+                    <!-- <pre class="code__example__code"><code><span>function newarr(n){<br>    let arr = [0,1,4,9,16];<br>    let arr1 = [];<br>    for(let i = 0; i &lt; arr.length; i++) {<br>        if(i % 2 != 0){<br>            arr1.push(arr[i] * arr[i]);};<br>        };<br>console.log(arr1);<br>};</span></code></pre>
+                    <pre class="code__example__code1"><code><span>function newarr(n){<br>let arr = [0,1,4,9,16];<br>let arr1 = [];<br>for(let i=0;i&lt;arr.length;i++){<br>  if(i % 2 != 0){<br>    arr1.push(arr[i] * arr[i]);};<br>    };<br>console.log(arr1);<br>};</span></code></pre> -->
+                </section>
+                <hr class="line">
+                <section class="information_section hobbies">
+                    <h2 id="Hobbies" class="hobbies">Hobbies</h2>
+                    <p class="hobbies_list">My hobbies is mobile phone repair,
+                        swimming, outdoor activities. I like pleasant communication with nice people.       
+                    </p>
+                </section>
+            </div>
+        </main>
         <footer class="footer">
             <div class="footer__inner">
-                <div class="footer_year">© 2021</div>
+                <p class="footer_year">© 2021</p>
                 <div>
                     <a class="footer_logo__rsschool" href=https://rs.school/js></a>
                 </div>
                 <div>
                     <a class="footer_logo__git" href="https://github.com/Nick1091"></a>
                 </div>
-                <div>
-                    <a class="footer_logo__youtube" href="https://www.youtube.com/channel/UCxUfPIL1IXrNwLULk5i9XNw"></a>
-                </div>
             </div>  
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="libs/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

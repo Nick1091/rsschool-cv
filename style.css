@@ -218,6 +218,9 @@ iframe {
     padding-left: 15px;
     margin-bottom: 15px;
 }
+.code_example p{
+    margin-bottom: 10px;
+}
 .link_website {
     display: block;
     margin-bottom: 15px;

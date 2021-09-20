@@ -221,6 +221,8 @@ iframe {
 .link_website {
     display: block;
     margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
 }
 .link_img {
     object-fit: cover;

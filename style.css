@@ -64,7 +64,7 @@ hr{
     left: 0px;
     height: 60px;
     position: relative;
-    line-height: 40px;
+    line-height: 60px;
     justify-content: end;
     z-index: 5;
 }
@@ -293,6 +293,10 @@ iframe {
     .navigation_list{
         padding-left: 10px;
     }
+    .navigation_wrapper{
+        height: 40px;
+        line-height: 40px;
+  }
     .navigation{
         position: fixed;
         display: block;

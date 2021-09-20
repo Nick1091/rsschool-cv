@@ -61,9 +61,9 @@ hr{
     background-color:#e8e8e8;
     top: 0px;
     left: 0px;
-    height: 40px;
+    height: 60px;
     position: relative;
-    line-height: 40px;
+    line-height: 60px;
     justify-content: end;
     z-index: 5;
 }

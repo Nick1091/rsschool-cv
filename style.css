@@ -14,7 +14,7 @@ body{
     width: 100%;
     color: black;
     font-family: 'Urbanist', sans-serif;
-    background-color: #f3d89a;
+    background-color: #fff8e9;
 }
 h2{
     padding-bottom: 20px;
@@ -64,7 +64,7 @@ hr{
     left: 0px;
     height: 60px;
     position: relative;
-    line-height: 60px;
+    line-height: 40px;
     justify-content: end;
     z-index: 5;
 }
